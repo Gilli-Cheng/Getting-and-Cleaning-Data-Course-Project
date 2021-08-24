@@ -70,4 +70,4 @@ clean <- merge %>%
         summarize_all(funs(mean))
 #getwd()
 write.table(clean, file = "./CleanData.txt",row.name = F)
-write.table(clean,file = "./CleanData.csv", sep = ",")
+write.table(clean,file = "./CleanData.csv", sep = ",",row.names = F)
