@@ -69,3 +69,6 @@ merge <- converter(merge)
 clean <- merge %>%
         group_by(subject,activity) %>%
         summarize_all(funs(mean))
+#getwd()
+write.table(clean, file = "./CleanData.txt",row.name = F)
+write.table(clean,file = "./CleanData.csv", sep = ",")
